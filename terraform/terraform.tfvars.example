@@ -1,0 +1,4 @@
+recipient_email     = "you@example.com"
+aws_region          = "us-east-1"
+schedule_expression = "rate(30 days)"
+bedrock_model_id    = "us.anthropic.claude-haiku-4-5-20251001-v1:0"

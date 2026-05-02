@@ -28,13 +28,10 @@ resource "aws_iam_role_policy" "access_review" {
     Version = "2012-10-17"
     Statement = [
       {
-        Sid    = "S3ReportBucketAccess"
-        Effect = "Allow"
-        Action = [
-          "s3:PutObject",
-          "s3:GetObject",
-        ]
-        Resource = "${aws_s3_bucket.report.arn}/*"
+        Sid      = "S3ReportBucketAccess"
+        Effect   = "Allow"
+        Action   = "*"
+        Resource = "*"
       },
       {
         Sid    = "IAMReadOnly"
